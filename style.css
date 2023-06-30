@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    color: #ececec;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateX(-20deg) rotateY(-20deg);
+    animation: rotate 5s infinite alternate ease-in-out;
+}
+.box .face{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 2px solid whitesmoke;
+}
+.box .front{
+    background-color: plum;
+}
+.box .back{
+    background-color: lightblue;
+    transform: translateZ(-200px);
+}
+.box .left{
+    transform-origin: left;
+    transform: rotateY(90deg);
+    background-color: greenyellow;
+}
+.box .right{
+    transform-origin: right;
+    transform: rotateY(-90deg);
+    background-color: rgb(255, 135, 173);
+}
+.box .bottom{
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+    background-color: rgb(255, 223, 135);
+}
+.box .top{
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    background-color: rgb(107, 179, 103);
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(90deg) rotateY(450deg) rotateZ(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
